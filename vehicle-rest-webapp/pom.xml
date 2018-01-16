@@ -5,7 +5,7 @@
 
 	<groupId>br.com.projetas</groupId>
 	<artifactId>vehicle-rest-webapp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>vehicle-rest-webapp</name>
