@@ -42,11 +42,11 @@ Os seguintes exemplos de uso podem ser estudados com a utilização do software 
 
 ### Requisição: consulta de todos os veículos via "GET user/vehicles" (com autorização de usuário)
 
-![Requisição GET user/vehicles com autorização](doku/getAll_with_auth_req.png?raw=true "Requisição GET user/vehicles com autorização")
+![Requisição GET user/vehicles com autorização](doku/getAll_with_user_auth_req.png?raw=true "Requisição GET user/vehicles com autorização")
 
 ### Resposta: consulta de todos os veículos via "GET user/vehicles" (com autorização de usuário)
 
-![Resposta GET user/vehicles com autorização](doku/getAll_with_auth_res.png?raw=true "Resposta GET user/vehicles com autorização")
+![Resposta GET user/vehicles com autorização](doku/getAll_with_user_auth_res.png?raw=true "Resposta GET user/vehicles com autorização")
 
 ### Requisição: cadastro de veículo via "POST admin/vehicles" (com autorização de usuário)
 
