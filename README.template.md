@@ -1,26 +1,16 @@
-# Nome do produto
-> Descrição curta sobre o que seu projeto faz.
+# vehicle-rest-webapp
+> Aplicação REST de cadastro de veículos.
 
-[![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-
-![](../header.png)
+Trata-se de uma aplicação REST com Spring Boot + Spring Data JPA + Spring Security + Maven para cadastro de veículos.
 
 ## Instalação
 
-OS X & Linux:
+OS X & Linux & Windows :
 
 ```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
+java -jar vehicle-rest-webapp-1.0.jar
 ```
 
 ## Exemplo de uso
@@ -29,38 +19,28 @@ Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado
 
 ## Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
+A aplicação é do tipo standalone, sendo necessário apenas que uma JVM esteja instalada na plataforma. As dependências internas da aplicação são gerenciadas através da ferramenta Maven. A aplicação pode ser modificada (via pom.xml) para ser compilada para um .war que pode ser executado em qualquer Servlet container ou Webserver típico (Tomcat, WildFly, Glassfish etc). 
+
+Para execução desta aplicação é necessário apenas que o download deste repositório seja realizado, extraído e acessado via terminal. O projeto vehicle-rest-webapp se encontrará dentro do diretório extraído, o seguinte comando deve então ser executado no terminal, com uma JVM pré-instalada e a JDK configurada adequadamente na variável de ambiente JAVA_HOME: 
 
 ```sh
-make install
-npm test
+mvn spring-boot:run
 ```
 
 ## Histórico de lançamentos
 
-* 0.2.1
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0
+* 1.0
     * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1
-    * Trabalho em andamento
+* 0.0.1-SNAPSHOT
+    * Projeto em andamento
 
 ## Meta
 
-Seu Nome – [@SeuNome](https://twitter.com/...) – SeuEmail@exemplo.com
+Glênio Silva Pimentel – [@GlenioSP](https://www.linkedin.com/in/gleniosp/) – glenio.sp@gmail.com
 
-Distribuído sob a licença XYZ. Veja `LICENSE` para mais informações.
+Distribuído sob a licença MIT.
 
-[https://github.com/yourname/github-link](https://github.com/othonalberto/)
+[https://github.com/GlenioSP/](https://github.com/GlenioSP/)
 
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[travis-url]: https://ci.spring.io/teams/spring-boot/pipelines/spring-boot?groups=Build
